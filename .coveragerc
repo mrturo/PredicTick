@@ -1,0 +1,19 @@
+[run]
+source = src
+omit =
+    src/backtesting__backtest.py
+    src/dashboard__streamlit_dashboard.py
+    src/evaluation__evaluate_model.py
+    src/prediction__predict_core.py
+    src/prediction__predict_model.py
+    src/training__train_core.py
+    src/training__train_model.py
+    src/updater/data_updater.py
+    src/updater/market_data_downloader.py
+    src/updater/market_data_service.py
+
+[report]
+show_missing = True
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
