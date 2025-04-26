@@ -1,0 +1,8 @@
+autoflake
+bandit
+black
+coverage
+isort
+pydocstringformatter
+pylint
+pytest
