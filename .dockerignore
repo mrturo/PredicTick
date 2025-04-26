@@ -1,0 +1,40 @@
+# Exclude VCS and IDE metadata
+.git
+.vscode/
+.idea/
+
+# Environment and secrets
+*.pem
+*.key
+*.crt
+
+# Python caches and bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.cache/
+.venv/
+
+# Build and coverage artifacts
+build/
+dist/
+*.egg-info/
+htmlcov/
+.coverage
+coverage.xml
+tmp/
+*.log
+
+# Project documentation and tests (not needed in runtime image)
+tests/
+docs/
+
+# Docker-related files not required inside the image context
+Dockerfile
+docker-compose*.yml
+
+# Other project-specific assets unnecessary for container builds
+images/
